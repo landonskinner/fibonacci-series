@@ -1,5 +1,13 @@
 function fibonacci(num) {
-  // type your code here
+  const n0 = 0;
+  const n1 = 1;
+  if (num === 0) {
+    return n0
+  } else if (num === 1) {
+    return n1
+  } else {
+    return fibonacci(num - 1) + fibonacci(num - 2)
+  }
 }
 
 if (require.main === module) {
